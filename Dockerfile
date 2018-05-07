@@ -1,24 +1,36 @@
 FROM debian:9
 
-WORKDIR ~/
+WORKDIR /
 
 RUN apt-get update -y && \
 	apt-get dist-upgrade -y && \
 	apt-get dist-upgrade -y && \
 	apt-get install -y git
 	
+RUN useradd -ms /bin/bash cisco
+	
 RUN apt-get install -y wget vim wget curl
 
-COPY Data\ncs-setup\nso-4.5.2.linux.x86_64.signed.bin ~/nso.bin
+# COPY Data/ncs-setup/nso-4.5.2.linux.x86_64.signed.bin /home/cisco/nso.bin
 
-VOLUME ["/Data"]
+WORKDIR /home/cisco
 
-# RUN ln -s \Data\workspaces\452\ncs-run ~/ncs-run
+ADD Data /home/cisco
 
+RUN ln -s /home/cisco/workspaces/452/ncs-run /home/cisco/ncs-run
+	
 RUN apt-get -y install openssh-client openssh-server vim python2.7 wget git && \
 	apt-get -y clean autoclean && \
 	apt-get -y autoremove && \
 	rm -rf /tmp/* /var/tmp/* /var/lib/{apt,dpkg,cache,log}
+	
+### git files
+
+RUN git clone https://github.com/mft3000/gitInit
+
+RUN cp /home/cisco/gitInit/gitInit/* /home/cisco && \
+	rm -rf /home/cisco/gitInit && \
+	mv /home/cisco/bash_profile /home/cisco/.bash_profile
 	
 # RUN cd ~ && \
 # 	./nso.bin --local-install ~/ncs46 && \
@@ -30,10 +42,6 @@ RUN apt-get -y install openssh-client openssh-server vim python2.7 wget git && \
 # 	ln -s ~/ncs-run46 ~/ncs-run && \
 # 	cd ~/ncs-run && \
 # 	ncs
-
-### git files
-
-# RUN git clone https://github.com/mft3000/gitInit
 
 ### ncs-scripts
 
