@@ -7,7 +7,8 @@ RUN apt-get update -y && \
 	apt-get dist-upgrade -y && \
 	apt-get install -y git
 	
-RUN useradd -ms /bin/bash cisco
+RUN useradd -ms /bin/bash cisco && \
+	echo "cisco:cisco" | chpasswd
 	
 RUN apt-get install -y wget vim wget curl
 
@@ -32,6 +33,8 @@ RUN cp /home/cisco/gitInit/gitInit/* /home/cisco && \
 	rm -rf /home/cisco/gitInit && \
 	mv /home/cisco/bash_profile /home/cisco/.bash_profile
 	
+#RUN echo 'source ' >> .bashrc
+	
 # RUN cd ~ && \
 # 	./nso.bin --local-install ~/ncs46 && \
 # 	ln -s ~/ncs46 ~/ncs && \
@@ -47,6 +50,6 @@ RUN cp /home/cisco/gitInit/gitInit/* /home/cisco && \
 
 # RUN git clone https://github.com/mft3000/ncs-scripts
 
-EXPOSE 8080 830 2022 2023 4569
+EXPOSE 22 8080 830 2022 2023 4569
 
 # ENTRYPOINT ["~/ncs-run"]
