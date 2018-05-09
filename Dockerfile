@@ -1,26 +1,30 @@
+### written by Francesco Marangione 
+### May 2018
+###(fmarangi@cisco.com)
+
 FROM debian:9
 
 WORKDIR /
 
+ARG NSOVER
+
 RUN apt-get update -y && \
 	apt-get dist-upgrade -y && \
 	apt-get dist-upgrade -y && \
-	apt-get install -y git
+	apt-get install -y git sudo
 	
 RUN useradd -ms /bin/bash cisco && \
-	echo "cisco:cisco" | chpasswd
-	
-RUN apt-get install -y wget vim wget curl
+	echo "cisco:cisco" | chpasswd && \
+	adduser cisco sudo
 
-# COPY Data/ncs-setup/nso-4.5.2.linux.x86_64.signed.bin /home/cisco/nso.bin
+RUN apt-get install -y wget vim curl
 
 WORKDIR /home/cisco
-
 ADD Data /home/cisco
 
-RUN ln -s /home/cisco/workspaces/452/ncs-run /home/cisco/ncs-run
+RUN ln -s /home/cisco/workspaces/$NSOVER/ncs-run /home/cisco/ncs-run
 	
-RUN apt-get -y install openssh-client openssh-server vim python2.7 wget git && \
+RUN apt-get -y install openssh-client openssh-server vim python2.7 make gawk ant && \
 	apt-get -y clean autoclean && \
 	apt-get -y autoremove && \
 	rm -rf /tmp/* /var/tmp/* /var/lib/{apt,dpkg,cache,log}
@@ -31,25 +35,30 @@ RUN git clone https://github.com/mft3000/gitInit
 
 RUN cp /home/cisco/gitInit/gitInit/* /home/cisco && \
 	rm -rf /home/cisco/gitInit && \
-	mv /home/cisco/bash_profile /home/cisco/.bash_profile
+	mv /home/cisco/bash_profile /home/cisco/.bash_profile	
 	
-#RUN echo 'source ' >> .bashrc
-	
-# RUN cd ~ && \
-# 	./nso.bin --local-install ~/ncs46 && \
-# 	ln -s ~/ncs46 ~/ncs && \
-# 	source ~/ncs/ncsrc && \
-# 	echo 'source ~/ncs/ncsrc' >> ~/.bashrc && \
-# 	mkdir ncs-run46 && \
-# 	ncs-setup --dest ncs-run46 && \
-# 	ln -s ~/ncs-run46 ~/ncs-run && \
-# 	cd ~/ncs-run && \
-# 	ncs
+### install NSO
+		
+WORKDIR ncs-setup
+RUN ./nso-$NSOVER.linux.x86_64.signed.bin --skip-verification
+
+WORKDIR /home/cisco
+RUN cd /home/cisco && \
+	./ncs-setup/nso-$NSOVER.linux.x86_64.installer.bin --local-install /home/cisco/ncs-$NSOVER && \
+ 	ln -s /home/cisco/ncs-$NSOVER /home/cisco/ncs && \
+	/bin/bash -c "source /home/cisco/ncs/ncsrc"
 
 ### ncs-scripts
 
-# RUN git clone https://github.com/mft3000/ncs-scripts
+RUN git clone https://github.com/mft3000/ncs-scripts && \
+	chmod -R 744 ncs-scripts
 
-EXPOSE 22 8080 830 2022 2023 4569
+EXPOSE 22 8080 830 2022 2023 2024 4569 4000
 
-# ENTRYPOINT ["~/ncs-run"]
+### grant permissions to user
+
+RUN chown -R cisco:cisco /home/cisco
+USER cisco
+#WORKDIR /home/cisco/ncs-run
+
+#ENTRYPOINT /home/cisco/ncs/bin/ncs --cd /home/cisco/ncs-run

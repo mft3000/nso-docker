@@ -1,0 +1,9 @@
+Starting java-vm with options:
+' -classpath :/home/cisco/ncs452/java/jar/* -Dport=4569 -Djava.security.egd=file:/dev/./urandom -Dfile.encoding=UTF-8'
+/home/cisco/ncs452/bin/ncs-start-java-vm: 97: exec: java: not found
+Starting java-vm with options:
+' -classpath :/home/cisco/ncs452/java/jar/* -Dport=4569 -Djava.security.egd=file:/dev/./urandom -Dfile.encoding=UTF-8'
+/home/cisco/ncs452/bin/ncs-start-java-vm: 97: exec: java: not found
+Starting java-vm with options:
+' -classpath :/home/cisco/ncs452/java/jar/* -Dport=4569 -Djava.security.egd=file:/dev/./urandom -Dfile.encoding=UTF-8'
+/home/cisco/ncs452/bin/ncs-start-java-vm: 97: exec: java: not found

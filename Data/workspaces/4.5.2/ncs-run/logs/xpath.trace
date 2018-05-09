@@ -1,0 +1,170 @@
+
+9-May-2018::17:24:28.204 Evaluating XPath for: /cluster/commit-queue/enabled:
+   . = 'false' or
+not (/cluster/remote-node
+       [not (username)]
+       [deref(authgroup)/../default-map[same-user or same-pass]])
+get_elem("/ncs:cluster/commit-queue/enabled") = false
+9-May-2018::17:24:28.236 XPath for: /cluster/commit-queue/enabled returns true
+
+9-May-2018::17:24:28.236 Evaluating XPath for: /cluster/device-notifications/enabled:
+   . = 'false' or
+not (/cluster/remote-node
+       [not (username)]
+       [deref(authgroup)/../default-map[same-user or same-pass]])
+get_elem("/ncs:cluster/device-notifications/enabled") = false
+9-May-2018::17:24:28.237 XPath for: /cluster/device-notifications/enabled returns true
+
+9-May-2018::17:24:28.237 Evaluating XPath for: /devices/authgroups/snmp-group[name='default']/umap[local-user='admin']/usm/security-level:
+  (. = 'auth-priv' and ../priv) or (. != 'auth-priv')
+get_elem("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level") = auth-priv
+exists("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/priv") = true
+9-May-2018::17:24:28.237 XPath for: /devices/authgroups/snmp-group[name='default']/umap[local-user='admin']/usm/security-level returns true
+
+9-May-2018::17:24:28.237 Evaluating XPath for: /devices/authgroups/snmp-group[name='default']/umap[local-user='admin']/usm/security-level:
+  . = 'no-auth-no-priv' or ../auth
+get_elem("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/security-level") = auth-priv
+exists("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/auth") = true
+9-May-2018::17:24:28.238 XPath for: /devices/authgroups/snmp-group[name='default']/umap[local-user='admin']/usm/security-level returns true
+
+9-May-2018::17:24:28.238 Evaluating XPath for: /devices/authgroups/snmp-group[name='default']/umap[local-user='admin']/usm/priv:
+  ../auth
+exists("/ncs:devices/authgroups/snmp-group{default}/umap{admin}/usm/auth") = true
+9-May-2018::17:24:28.238 XPath for: /devices/authgroups/snmp-group[name='default']/umap[local-user='admin']/usm/priv returns true
+
+9-May-2018::17:24:28.254 Evaluating XPath for: /cluster/commit-queue/enabled:
+   . = 'false' or
+not (/cluster/remote-node
+       [not (username)]
+       [deref(authgroup)/../default-map[same-user or same-pass]])
+get_elem("/ncs:cluster/commit-queue/enabled") = false
+9-May-2018::17:24:28.254 XPath for: /cluster/commit-queue/enabled returns true
+
+9-May-2018::17:24:28.254 Evaluating XPath for: /cluster/device-notifications/enabled:
+   . = 'false' or
+not (/cluster/remote-node
+       [not (username)]
+       [deref(authgroup)/../default-map[same-user or same-pass]])
+get_elem("/ncs:cluster/device-notifications/enabled") = false
+9-May-2018::17:24:28.255 XPath for: /cluster/device-notifications/enabled returns true
+
+9-May-2018::17:24:32.962 Evaluating XPath for: /snmp/agent/version/v3:
+  ../../engine-id
+exists("/snmp:snmp/agent/engine-id") = true
+9-May-2018::17:24:32.962 XPath for: /snmp/agent/version/v3 returns true
+
+9-May-2018::17:24:32.981 Evaluating XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='no-auth-no-priv']/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view") = internet
+9-May-2018::17:24:32.984 XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='no-auth-no-priv']/notify-view returns true
+
+9-May-2018::17:24:32.985 Evaluating XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='no-auth-no-priv']/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view") = internet
+9-May-2018::17:24:32.987 XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='no-auth-no-priv']/read-view returns true
+
+9-May-2018::17:24:32.988 Evaluating XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-no-priv']/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view") = internet
+9-May-2018::17:24:32.991 XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-no-priv']/notify-view returns true
+
+9-May-2018::17:24:32.993 Evaluating XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-no-priv']/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view") = internet
+9-May-2018::17:24:33.006 XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-no-priv']/read-view returns true
+
+9-May-2018::17:24:33.010 Evaluating XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-priv']/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view") = internet
+9-May-2018::17:24:33.014 XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-priv']/notify-view returns true
+
+9-May-2018::17:24:33.016 Evaluating XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-priv']/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view") = internet
+9-May-2018::17:24:33.021 XPath for: /snmp/vacm/group[name='initial']/access[sec-model='usm'][sec-level='auth-priv']/read-view returns true
+
+9-May-2018::17:24:33.024 Evaluating XPath for: /snmp/vacm/group[name='public']/access[sec-model='any'][sec-level='no-auth-no-priv']/notify-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view") = internet
+9-May-2018::17:24:33.030 XPath for: /snmp/vacm/group[name='public']/access[sec-model='any'][sec-level='no-auth-no-priv']/notify-view returns true
+
+9-May-2018::17:24:33.036 Evaluating XPath for: /snmp/vacm/group[name='public']/access[sec-model='any'][sec-level='no-auth-no-priv']/read-view:
+  /snmp/vacm/view/name
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view") = internet
+exists("/snmp:snmp/vacm/view{internet}") = true
+get_elem("/snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view") = internet
+9-May-2018::17:24:33.038 XPath for: /snmp/vacm/group[name='public']/access[sec-model='any'][sec-level='no-auth-no-priv']/read-view returns true
+
+9-May-2018::17:24:33.039 Evaluating XPath for: /snmp/notify[name='foo']/type:
+  . != 'inform' or
+count(
+  /snmp/target[tag = current()/../tag]/../usm[../agent/engine-id])
+= count(
+  /snmp/target[tag = current()/../tag]/../usm)
+get_elem("/snmp:snmp/notify{foo}/type") = trap
+9-May-2018::17:24:33.040 XPath for: /snmp/notify[name='foo']/type returns true
+
+9-May-2018::17:24:33.040 Evaluating XPath for: /snmp/usm/local/user[name='initial']/priv:
+  ../auth
+exists("/snmp:snmp/usm/local/user{initial}/auth") = true
+9-May-2018::17:24:33.041 XPath for: /snmp/usm/local/user[name='initial']/priv returns true
+
+9-May-2018::17:24:33.042 Evaluating XPath for: /snmp/target[name='monitor']/v2c/sec-name:
+  /snmp/community/sec-name
+get_next(/snmp:snmp/community) = {public}
+get_elem("/snmp:snmp/community{public}/sec-name") = public
+get_elem("/snmp:snmp/target{monitor}/v2c/sec-name") = public
+9-May-2018::17:24:33.056 XPath for: /snmp/target[name='monitor']/v2c/sec-name returns true
+
+9-May-2018::17:25:30.544 maapi_xpath_eval_expr() evaluating: string(count(/devices/device))
+num_instances("/ncs:devices/device") = 0
+9-May-2018::17:25:30.546 maapi_xpath_eval_expr() result: 0
+
+9-May-2018::17:25:30.548 maapi_xpath_eval_expr() evaluating: string(count(/devices/device/remote-node))
+get_next(/ncs:devices/device) = false
+9-May-2018::17:25:30.549 maapi_xpath_eval_expr() result: 0
+
+9-May-2018::17:26:13.282 Query(1): Starting evaluation of:
+  /webui/webui-one:applications/application
+Selection:
+  id
+  category
+  href
+  title
+  description
+  promo-label
+  abbreviation
+  shortcut
+
+9-May-2018::17:26:13.282 Query(2): Starting evaluation of:
+  /packages/package
+Selection:
+  name
+  description
+9-May-2018::17:26:13.291 Query(2): done, returned 1 results9-May-2018::17:26:13.292 Query(1): done, returned 6 results
+9-May-2018::17:26:14.787 Query(3): Starting evaluation of:
+  /devices/device-group
+Selection:
+  name
+9-May-2018::17:26:14.904 Query(3): done, returned 1 results
+9-May-2018::17:26:15.134 Query(4): Starting evaluation of:
+  /devices/device
+Selection:
+  name
+  address
+  port
+9-May-2018::17:26:15.141 Query(4): done, returned 1 results

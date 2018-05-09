@@ -1,0 +1,670 @@
+<INFO> 9-May-2018::17:24:26.199 nso ncs[37]: ncs embedded apps in early_phase0:
+	[]
+<INFO> 9-May-2018::17:24:26.568 nso ncs[37]: ncs mmap_schema, started
+<INFO> 9-May-2018::17:24:26.628 nso ncs[37]: ncs embedded apps in phase0:
+	[]
+<DEBUG> 9-May-2018::17:24:27.123 nso ncs[37]: devel-cdb Using delayed CDB journal compaction (automatic mode)
+<INFO> 9-May-2018::17:24:27.388 nso ncs[37]: ncs mmap_schema completed
+<INFO> 9-May-2018::17:24:28.017 nso ncs[37]: devel-cdb init files found in /home/cisco/ncs452/var/ncs/cdb: aaa_init.xml, ncs_defaults.xml, sls_defaults.xml, tailf-ncs-alarms_init.xml, tailf-webui-one_init.xml
+<INFO> 9-May-2018::17:24:28.020 nso ncs[37]: devel-cdb init files found in ./ncs-cdb: 
+<DEBUG> 9-May-2018::17:24:28.144 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2: entering validate phase for running...
+<DEBUG> 9-May-2018::17:24:28.145 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: grabbing transaction lock...
+<DEBUG> 9-May-2018::17:24:28.146 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:  ok
+<DEBUG> 9-May-2018::17:24:28.146 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: mark inactive...
+<DEBUG> 9-May-2018::17:24:28.164 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:  ok
+<DEBUG> 9-May-2018::17:24:28.175 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: pre validate...
+<DEBUG> 9-May-2018::17:24:28.178 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:  ok
+<DEBUG> 9-May-2018::17:24:28.189 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: run validation over the change set...
+<DEBUG> 9-May-2018::17:24:28.243 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: validation over the change set done
+<DEBUG> 9-May-2018::17:24:28.244 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: run dependency-triggered validation...
+<DEBUG> 9-May-2018::17:24:28.255 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: dependency-triggered validation done
+<DEBUG> 9-May-2018::17:24:28.255 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: check configuration policies...
+<DEBUG> 9-May-2018::17:24:28.257 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   validate: configuration policies done
+<DEBUG> 9-May-2018::17:24:28.258 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2: entering write phase for running...
+<DEBUG> 9-May-2018::17:24:28.258 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   cdb: write_start
+<DEBUG> 9-May-2018::17:24:28.264 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2: entering prepare phase for running...
+<DEBUG> 9-May-2018::17:24:28.265 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   cdb: prepare
+<DEBUG> 9-May-2018::17:24:28.268 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2: entering commit phase for running...
+<DEBUG> 9-May-2018::17:24:28.274 nso ncs[37]: ncs commit progress db=running usid=5 thandle=-2:   cdb: commit
+<DEBUG> 9-May-2018::17:24:28.285 nso ncs[37]: devel-cdb Delaying CDB journal compaction
+<INFO> 9-May-2018::17:24:28.309 nso ncs[37]: ncs embedded apps in phase1:
+	[]
+<DEBUG> 9-May-2018::17:24:29.915 nso ncs[37]: devel-c New daemon connected (name: ncs-internal-device-mgr, daemon id: 0)
+<DEBUG> 9-May-2018::17:24:29.916 nso ncs[37]: devel-c New worker connected (daemon id: 0 worker id: 1)
+<DEBUG> 9-May-2018::17:24:30.616 nso ncs[37]: devel-c New daemon connected (name: snmp-config-transform, daemon id: 1)
+<DEBUG> 9-May-2018::17:24:30.620 nso ncs[37]: devel-c New worker connected (daemon id: 1 worker id: 4)
+<DEBUG> 9-May-2018::17:24:30.624 nso ncs[37]: devel-cdb connect from snmp-config-transform
+<DEBUG> 9-May-2018::17:24:30.624 nso ncs[37]: devel-cdb client snmp-config-transform has pid 61/6
+<DEBUG> 9-May-2018::17:24:30.626 nso ncs[37]: devel-cdb inactive client snmp-config-transform closed
+<DEBUG> 9-May-2018::17:24:30.633 nso ncs[37]: devel-c New daemon connected (name: snmp-config-hook, daemon id: 2)
+<DEBUG> 9-May-2018::17:24:30.644 nso ncs[37]: devel-c New worker connected (daemon id: 2 worker id: 7)
+<DEBUG> 9-May-2018::17:24:30.881 nso ncs[37]: devel-c New daemon connected (name: ncs-internal-template-variable, daemon id: 3)
+<DEBUG> 9-May-2018::17:24:30.882 nso ncs[37]: devel-c New worker connected (daemon id: 3 worker id: 1)
+<DEBUG> 9-May-2018::17:24:30.926 nso ncs[37]: devel-c New daemon connected (name: ncs-internal-service-mux, daemon id: 4)
+<DEBUG> 9-May-2018::17:24:30.926 nso ncs[37]: devel-c New worker connected (daemon id: 4 worker id: 1)
+<DEBUG> 9-May-2018::17:24:30.928 nso ncs[37]: devel-c New daemon connected (name: ncs-internal-service-mux-completion, daemon id: 5)
+<DEBUG> 9-May-2018::17:24:30.929 nso ncs[37]: devel-c New worker connected (daemon id: 5 worker id: 1)
+<DEBUG> 9-May-2018::17:24:31.147 nso ncs[37]: devel-cdb Loaded AAA data from CDB
+<INFO> 9-May-2018::17:24:31.308 nso ncs[37]: ncs embedded apps in phase1_delayed:
+	[]
+<DEBUG> 9-May-2018::17:24:31.360 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12: entering validate phase for running...
+<DEBUG> 9-May-2018::17:24:31.360 nso ncs[37]: devel-c new_usess db request daemon id: 4
+<DEBUG> 9-May-2018::17:24:31.369 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: run pre-trans-lock service callbacks...
+<DEBUG> 9-May-2018::17:24:31.369 nso ncs[37]: devel-c db reply daemon id: 4
+<DEBUG> 9-May-2018::17:24:31.369 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: run transforms and transaction hooks...
+<DEBUG> 9-May-2018::17:24:31.370 nso ncs[37]: devel-c new_trans request daemon id: 4 thandle: 12
+<DEBUG> 9-May-2018::17:24:31.370 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:  ok
+<DEBUG> 9-May-2018::17:24:31.370 nso ncs[37]: devel-c new_trans succeeded daemon id: 4 session id: 12 worker id: 1
+<DEBUG> 9-May-2018::17:24:31.371 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: pre-trans-lock service callbacks done
+<DEBUG> 9-May-2018::17:24:31.371 nso ncs[37]: devel-c new_usess db request daemon id: 0
+<DEBUG> 9-May-2018::17:24:31.371 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: grabbing transaction lock...
+<DEBUG> 9-May-2018::17:24:31.372 nso ncs[37]: devel-c db reply daemon id: 0
+<DEBUG> 9-May-2018::17:24:31.375 nso ncs[37]: devel-c new_trans request daemon id: 0 thandle: 12
+<DEBUG> 9-May-2018::17:24:31.382 nso ncs[37]: devel-c new_trans succeeded daemon id: 0 session id: 12 worker id: 1
+<DEBUG> 9-May-2018::17:24:31.382 nso ncs[37]: devel-c trans_lock request daemon id: 4 session id: 12
+<DEBUG> 9-May-2018::17:24:31.383 nso ncs[37]: devel-c trans_lock succeeded daemon id: 4 session id: 12
+<DEBUG> 9-May-2018::17:24:31.386 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:  ok
+<DEBUG> 9-May-2018::17:24:31.386 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: creating rollback file...
+<DEBUG> 9-May-2018::17:24:31.513 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:  ok
+<DEBUG> 9-May-2018::17:24:31.516 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: run transforms and transaction hooks...
+<DEBUG> 9-May-2018::17:24:31.529 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:  ok
+<DEBUG> 9-May-2018::17:24:31.538 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: mark inactive...
+<DEBUG> 9-May-2018::17:24:31.548 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:  ok
+<DEBUG> 9-May-2018::17:24:31.550 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: pre validate...
+<DEBUG> 9-May-2018::17:24:31.550 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:  ok
+<DEBUG> 9-May-2018::17:24:31.550 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: run validation over the change set...
+<DEBUG> 9-May-2018::17:24:31.552 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: validation over the change set done
+<DEBUG> 9-May-2018::17:24:31.560 nso ncs[37]: devel-c prepare request daemon id: 0 session id: 12
+<DEBUG> 9-May-2018::17:24:31.564 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: run dependency-triggered validation...
+<DEBUG> 9-May-2018::17:24:31.568 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: dependency-triggered validation done
+<DEBUG> 9-May-2018::17:24:31.570 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: check configuration policies...
+<DEBUG> 9-May-2018::17:24:31.574 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   validate: configuration policies done
+<DEBUG> 9-May-2018::17:24:31.580 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12: entering write phase for running...
+<DEBUG> 9-May-2018::17:24:31.584 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   cdb: write_start
+<DEBUG> 9-May-2018::17:24:31.585 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12: entering prepare phase for running...
+<DEBUG> 9-May-2018::17:24:31.587 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   cdb: prepare
+<DEBUG> 9-May-2018::17:24:31.588 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   ncs-internal-device-mgr: prepare
+<DEBUG> 9-May-2018::17:24:31.672 nso ncs[37]: devel-c prepare succeeded daemon id: 0 session id: 12
+<DEBUG> 9-May-2018::17:24:31.676 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12: entering commit phase for running...
+<DEBUG> 9-May-2018::17:24:31.679 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   cdb: commit
+<DEBUG> 9-May-2018::17:24:31.984 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   ncs-internal-service-mux: commit
+<DEBUG> 9-May-2018::17:24:31.989 nso ncs[37]: devel-c commit request daemon id: 4 session id: 12
+<DEBUG> 9-May-2018::17:24:31.998 nso ncs[37]: ncs commit progress db=running usid=38 thandle=12:   ncs-internal-device-mgr: commit
+<DEBUG> 9-May-2018::17:24:32.005 nso ncs[37]: devel-c commit succeeded daemon id: 4 session id: 12
+<DEBUG> 9-May-2018::17:24:32.005 nso ncs[37]: devel-c commit request daemon id: 0 session id: 12
+<DEBUG> 9-May-2018::17:24:32.056 nso ncs[37]: devel-c commit succeeded daemon id: 0 session id: 12
+<DEBUG> 9-May-2018::17:24:32.059 nso ncs[37]: devel-c close_trans request daemon id: 4 session id: 12
+<DEBUG> 9-May-2018::17:24:32.063 nso ncs[37]: devel-c close_trans succeeded daemon id: 4 session id: 12
+<DEBUG> 9-May-2018::17:24:32.067 nso ncs[37]: devel-c close_trans request daemon id: 0 session id: 12
+<DEBUG> 9-May-2018::17:24:32.068 nso ncs[37]: devel-c close_trans succeeded daemon id: 0 session id: 12
+<DEBUG> 9-May-2018::17:24:32.070 nso ncs[37]: devel-c close_usess db request daemon id: 4
+<DEBUG> 9-May-2018::17:24:32.071 nso ncs[37]: devel-c db reply daemon id: 4
+<DEBUG> 9-May-2018::17:24:32.075 nso ncs[37]: devel-c close_usess db request daemon id: 0
+<DEBUG> 9-May-2018::17:24:32.078 nso ncs[37]: devel-c db reply daemon id: 0
+<DEBUG> 9-May-2018::17:24:32.111 nso ncs[37]: devel-c new_usess db request daemon id: 1
+<DEBUG> 9-May-2018::17:24:32.115 nso ncs[37]: devel-c db reply daemon id: 1
+<DEBUG> 9-May-2018::17:24:32.117 nso ncs[37]: devel-c new_trans request daemon id: 1 thandle: 15
+<DEBUG> 9-May-2018::17:24:32.125 nso ncs[37]: devel-c new_trans succeeded daemon id: 1 session id: 15 worker id: 4
+<DEBUG> 9-May-2018::17:24:32.126 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.128 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.129 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.132 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.133 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/ip
+<DEBUG> 9-May-2018::17:24:32.137 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/ip
+<DEBUG> 9-May-2018::17:24:32.139 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/ip
+<DEBUG> 9-May-2018::17:24:32.141 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/ip
+<DEBUG> 9-May-2018::17:24:32.142 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/udp-port
+<DEBUG> 9-May-2018::17:24:32.146 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/udp-port
+<DEBUG> 9-May-2018::17:24:32.146 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/udp-port
+<DEBUG> 9-May-2018::17:24:32.152 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/udp-port
+<DEBUG> 9-May-2018::17:24:32.153 nso ncs[37]: devel-c exists request for callpoint agent path /snmp:snmp/agent/version/v1
+<DEBUG> 9-May-2018::17:24:32.155 nso ncs[37]: devel-c exists succeeded for callpoint agent path /snmp:snmp/agent/version/v1
+<DEBUG> 9-May-2018::17:24:32.155 nso ncs[37]: devel-c exists request for callpoint agent path /snmp:snmp/agent/version/v2c
+<DEBUG> 9-May-2018::17:24:32.156 nso ncs[37]: devel-c exists succeeded for callpoint agent path /snmp:snmp/agent/version/v2c
+<DEBUG> 9-May-2018::17:24:32.158 nso ncs[37]: devel-c exists request for callpoint agent path /snmp:snmp/agent/version/v3
+<DEBUG> 9-May-2018::17:24:32.160 nso ncs[37]: devel-c exists succeeded for callpoint agent path /snmp:snmp/agent/version/v3
+<DEBUG> 9-May-2018::17:24:32.166 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/max-message-size
+<DEBUG> 9-May-2018::17:24:32.174 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/max-message-size
+<DEBUG> 9-May-2018::17:24:32.178 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/max-message-size
+<DEBUG> 9-May-2018::17:24:32.192 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/max-message-size
+<DEBUG> 9-May-2018::17:24:32.196 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/system/contact
+<DEBUG> 9-May-2018::17:24:32.198 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/system/contact
+<DEBUG> 9-May-2018::17:24:32.204 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/system/contact
+<DEBUG> 9-May-2018::17:24:32.207 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/system/contact
+<DEBUG> 9-May-2018::17:24:32.220 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/system/name
+<DEBUG> 9-May-2018::17:24:32.224 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/system/name
+<DEBUG> 9-May-2018::17:24:32.225 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/system/name
+<DEBUG> 9-May-2018::17:24:32.233 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/system/name
+<DEBUG> 9-May-2018::17:24:32.237 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/system/location
+<DEBUG> 9-May-2018::17:24:32.245 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/system/location
+<DEBUG> 9-May-2018::17:24:32.248 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/system/location
+<DEBUG> 9-May-2018::17:24:32.253 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/system/location
+<DEBUG> 9-May-2018::17:24:32.255 nso ncs[37]: devel-c get_elem request for callpoint usm path /snmp:snmp/usm/local/user{initial}/name
+<DEBUG> 9-May-2018::17:24:32.261 nso ncs[37]: devel-c get_elem succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/name
+<DEBUG> 9-May-2018::17:24:32.262 nso ncs[37]: devel-c get_case request for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth
+<DEBUG> 9-May-2018::17:24:32.267 nso ncs[37]: devel-c get_case succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth
+<DEBUG> 9-May-2018::17:24:32.270 nso ncs[37]: devel-c get_case request for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv
+<DEBUG> 9-May-2018::17:24:32.279 nso ncs[37]: devel-c get_case succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv
+<DEBUG> 9-May-2018::17:24:32.286 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.288 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.289 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/udp-port
+<DEBUG> 9-May-2018::17:24:32.292 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/udp-port
+<DEBUG> 9-May-2018::17:24:32.295 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/udp-port
+<DEBUG> 9-May-2018::17:24:32.299 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/udp-port
+<DEBUG> 9-May-2018::17:24:32.300 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.303 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.306 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/timeout
+<DEBUG> 9-May-2018::17:24:32.309 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/timeout
+<DEBUG> 9-May-2018::17:24:32.310 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/timeout
+<DEBUG> 9-May-2018::17:24:32.317 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/timeout
+<DEBUG> 9-May-2018::17:24:32.319 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.327 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.329 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/retries
+<DEBUG> 9-May-2018::17:24:32.334 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/retries
+<DEBUG> 9-May-2018::17:24:32.335 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/retries
+<DEBUG> 9-May-2018::17:24:32.342 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/retries
+<DEBUG> 9-May-2018::17:24:32.345 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.351 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/name
+<DEBUG> 9-May-2018::17:24:32.355 nso ncs[37]: devel-c get_case request for callpoint target path /snmp:snmp/target{monitor}
+<DEBUG> 9-May-2018::17:24:32.364 nso ncs[37]: devel-c get_case succeeded for callpoint target path /snmp:snmp/target{monitor}
+<DEBUG> 9-May-2018::17:24:32.375 nso ncs[37]: devel-c get_elem request for callpoint community path /snmp:snmp/community{public}/index
+<DEBUG> 9-May-2018::17:24:32.378 nso ncs[37]: devel-c get_elem succeeded for callpoint community path /snmp:snmp/community{public}/index
+<DEBUG> 9-May-2018::17:24:32.384 nso ncs[37]: devel-c new_usess db request daemon id: 2
+<DEBUG> 9-May-2018::17:24:32.392 nso ncs[37]: devel-c db reply daemon id: 2
+<DEBUG> 9-May-2018::17:24:32.395 nso ncs[37]: devel-c new_trans request daemon id: 2 thandle: 15
+<DEBUG> 9-May-2018::17:24:32.404 nso ncs[37]: devel-c new_trans succeeded daemon id: 2 session id: 15 worker id: 7
+<DEBUG> 9-May-2018::17:24:32.406 nso ncs[37]: devel-c create request for callpoint 'community-hook' path /snmp:snmp/community{public}
+<DEBUG> 9-May-2018::17:24:32.411 nso ncs[37]: devel-c create succeeded for callpoint 'community-hook' path /snmp:snmp/community{public}
+<DEBUG> 9-May-2018::17:24:32.414 nso ncs[37]: devel-c get_elem request for callpoint community path /snmp:snmp/community{public}/sec-name
+<DEBUG> 9-May-2018::17:24:32.421 nso ncs[37]: devel-c get_elem succeeded for callpoint community path /snmp:snmp/community{public}/sec-name
+<DEBUG> 9-May-2018::17:24:32.423 nso ncs[37]: devel-c get_elem request for callpoint notify path /snmp:snmp/notify{foo}/name
+<DEBUG> 9-May-2018::17:24:32.424 nso ncs[37]: devel-c get_elem succeeded for callpoint notify path /snmp:snmp/notify{foo}/name
+<DEBUG> 9-May-2018::17:24:32.429 nso ncs[37]: devel-c get_elem request for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:32.437 nso ncs[37]: devel-c get_elem succeeded for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:32.440 nso ncs[37]: devel-c get_elem request for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:32.442 nso ncs[37]: devel-c get_elem succeeded for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:32.443 nso ncs[37]: devel-c get_elem request for callpoint notify path /snmp:snmp/notify{foo}/name
+<DEBUG> 9-May-2018::17:24:32.445 nso ncs[37]: devel-c get_elem succeeded for callpoint notify path /snmp:snmp/notify{foo}/name
+<DEBUG> 9-May-2018::17:24:32.447 nso ncs[37]: devel-c get_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/name
+<DEBUG> 9-May-2018::17:24:32.450 nso ncs[37]: devel-c get_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/name
+<DEBUG> 9-May-2018::17:24:32.453 nso ncs[37]: devel-c get_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{public}/name
+<DEBUG> 9-May-2018::17:24:32.454 nso ncs[37]: devel-c get_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}/name
+<DEBUG> 9-May-2018::17:24:32.456 nso ncs[37]: devel-c get_elem request for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/name
+<DEBUG> 9-May-2018::17:24:32.457 nso ncs[37]: devel-c get_elem succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/name
+<DEBUG> 9-May-2018::17:24:32.458 nso ncs[37]: devel-c get_case request for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}
+<DEBUG> 9-May-2018::17:24:32.469 nso ncs[37]: devel-c get_case succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}
+<DEBUG> 9-May-2018::17:24:32.471 nso ncs[37]: devel-c get_elem request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/name
+<DEBUG> 9-May-2018::17:24:32.474 nso ncs[37]: devel-c get_elem succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/name
+<DEBUG> 9-May-2018::17:24:32.475 nso ncs[37]: devel-c get_case request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}
+<DEBUG> 9-May-2018::17:24:32.476 nso ncs[37]: devel-c get_case succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}
+<DEBUG> 9-May-2018::17:24:32.476 nso ncs[37]: devel-c get_case request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}
+<DEBUG> 9-May-2018::17:24:32.480 nso ncs[37]: devel-c get_case succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}
+<DEBUG> 9-May-2018::17:24:32.481 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15: entering validate phase for running...
+<DEBUG> 9-May-2018::17:24:32.482 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: run pre-trans-lock service callbacks...
+<DEBUG> 9-May-2018::17:24:32.483 nso ncs[37]: devel-c new_usess db request daemon id: 4
+<DEBUG> 9-May-2018::17:24:32.483 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: run transforms and transaction hooks...
+<DEBUG> 9-May-2018::17:24:32.484 nso ncs[37]: devel-c db reply daemon id: 4
+<DEBUG> 9-May-2018::17:24:32.488 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:  ok
+<DEBUG> 9-May-2018::17:24:32.488 nso ncs[37]: devel-c new_trans request daemon id: 4 thandle: 15
+<DEBUG> 9-May-2018::17:24:32.489 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: pre-trans-lock service callbacks done
+<DEBUG> 9-May-2018::17:24:32.489 nso ncs[37]: devel-c new_trans succeeded daemon id: 4 session id: 15 worker id: 1
+<DEBUG> 9-May-2018::17:24:32.489 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: grabbing transaction lock...
+<DEBUG> 9-May-2018::17:24:32.490 nso ncs[37]: devel-c new_usess db request daemon id: 0
+<DEBUG> 9-May-2018::17:24:32.490 nso ncs[37]: devel-c db reply daemon id: 0
+<DEBUG> 9-May-2018::17:24:32.490 nso ncs[37]: devel-c new_trans request daemon id: 0 thandle: 15
+<DEBUG> 9-May-2018::17:24:32.491 nso ncs[37]: devel-c new_trans succeeded daemon id: 0 session id: 15 worker id: 1
+<DEBUG> 9-May-2018::17:24:32.492 nso ncs[37]: devel-c trans_lock request daemon id: 4 session id: 15
+<DEBUG> 9-May-2018::17:24:32.494 nso ncs[37]: devel-c trans_lock succeeded daemon id: 4 session id: 15
+<DEBUG> 9-May-2018::17:24:32.494 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:  ok
+<DEBUG> 9-May-2018::17:24:32.496 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: creating rollback file...
+<DEBUG> 9-May-2018::17:24:32.564 nso ncs[37]: devel-c new_trans request daemon id: 1 thandle: 16
+<DEBUG> 9-May-2018::17:24:32.565 nso ncs[37]: devel-c new_trans succeeded daemon id: 1 session id: 16 worker id: 4
+<DEBUG> 9-May-2018::17:24:32.566 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.567 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.568 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.569 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.569 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.570 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.578 nso ncs[37]: devel-c close_trans request daemon id: 1 session id: 16
+<DEBUG> 9-May-2018::17:24:32.582 nso ncs[37]: devel-c close_trans succeeded daemon id: 1 session id: 16
+<DEBUG> 9-May-2018::17:24:32.583 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:  ok
+<DEBUG> 9-May-2018::17:24:32.598 nso ncs[37]: devel-c create request for callpoint agent path /snmp:snmp/agent/engine-id
+<DEBUG> 9-May-2018::17:24:32.599 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: run transforms and transaction hooks...
+<DEBUG> 9-May-2018::17:24:32.599 nso ncs[37]: devel-c create succeeded for callpoint agent path /snmp:snmp/agent/engine-id
+<DEBUG> 9-May-2018::17:24:32.600 nso ncs[37]: devel-c set_elem request for callpoint agent path /snmp:snmp/agent/engine-id/enterprise-number
+<DEBUG> 9-May-2018::17:24:32.603 nso ncs[37]: devel-c set_elem succeeded for callpoint agent path /snmp:snmp/agent/engine-id/enterprise-number
+<DEBUG> 9-May-2018::17:24:32.603 nso ncs[37]: devel-c set_elem request for callpoint agent path /snmp:snmp/agent/engine-id/from-text
+<DEBUG> 9-May-2018::17:24:32.605 nso ncs[37]: devel-c set_elem succeeded for callpoint agent path /snmp:snmp/agent/engine-id/from-text
+<DEBUG> 9-May-2018::17:24:32.606 nso ncs[37]: devel-c set_elem request for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.607 nso ncs[37]: devel-c set_elem succeeded for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.607 nso ncs[37]: devel-c create request for callpoint agent path /snmp:snmp/agent/version/v1
+<DEBUG> 9-May-2018::17:24:32.608 nso ncs[37]: devel-c create succeeded for callpoint agent path /snmp:snmp/agent/version/v1
+<DEBUG> 9-May-2018::17:24:32.609 nso ncs[37]: devel-c create request for callpoint agent path /snmp:snmp/agent/version/v2c
+<DEBUG> 9-May-2018::17:24:32.610 nso ncs[37]: devel-c create succeeded for callpoint agent path /snmp:snmp/agent/version/v2c
+<DEBUG> 9-May-2018::17:24:32.610 nso ncs[37]: devel-c create request for callpoint agent path /snmp:snmp/agent/version/v3
+<DEBUG> 9-May-2018::17:24:32.611 nso ncs[37]: devel-c create succeeded for callpoint agent path /snmp:snmp/agent/version/v3
+<DEBUG> 9-May-2018::17:24:32.612 nso ncs[37]: devel-c create request for callpoint usm path /snmp:snmp/usm/local/user{initial}
+<DEBUG> 9-May-2018::17:24:32.615 nso ncs[37]: devel-c create succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}
+<DEBUG> 9-May-2018::17:24:32.616 nso ncs[37]: devel-c create request for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth
+<DEBUG> 9-May-2018::17:24:32.616 nso ncs[37]: devel-c create succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth
+<DEBUG> 9-May-2018::17:24:32.617 nso ncs[37]: devel-c set_case request for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth
+<DEBUG> 9-May-2018::17:24:32.627 nso ncs[37]: devel-c set_case succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth
+<DEBUG> 9-May-2018::17:24:32.629 nso ncs[37]: devel-c create request for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth/sha
+<DEBUG> 9-May-2018::17:24:32.631 nso ncs[37]: devel-c create succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth/sha
+<DEBUG> 9-May-2018::17:24:32.632 nso ncs[37]: devel-c set_case request for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth/sha
+<DEBUG> 9-May-2018::17:24:32.635 nso ncs[37]: devel-c set_case succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth/sha
+<DEBUG> 9-May-2018::17:24:32.635 nso ncs[37]: devel-c set_elem request for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth/sha/password
+<DEBUG> 9-May-2018::17:24:32.685 nso ncs[37]: devel-c set_elem succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/auth/sha/password
+<DEBUG> 9-May-2018::17:24:32.686 nso ncs[37]: devel-c create request for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv
+<DEBUG> 9-May-2018::17:24:32.687 nso ncs[37]: devel-c create succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv
+<DEBUG> 9-May-2018::17:24:32.687 nso ncs[37]: devel-c set_case request for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv
+<DEBUG> 9-May-2018::17:24:32.690 nso ncs[37]: devel-c set_case succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv
+<DEBUG> 9-May-2018::17:24:32.690 nso ncs[37]: devel-c create request for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv/des
+<DEBUG> 9-May-2018::17:24:32.691 nso ncs[37]: devel-c create succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv/des
+<DEBUG> 9-May-2018::17:24:32.691 nso ncs[37]: devel-c set_case request for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv/des
+<DEBUG> 9-May-2018::17:24:32.692 nso ncs[37]: devel-c set_case succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv/des
+<DEBUG> 9-May-2018::17:24:32.693 nso ncs[37]: devel-c set_elem request for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv/des/password
+<DEBUG> 9-May-2018::17:24:32.749 nso ncs[37]: devel-c set_elem succeeded for callpoint usm path /snmp:snmp/usm/local/user{initial}/priv/des/password
+<DEBUG> 9-May-2018::17:24:32.750 nso ncs[37]: devel-c create request for callpoint target path /snmp:snmp/target{monitor}
+<DEBUG> 9-May-2018::17:24:32.754 nso ncs[37]: devel-c create succeeded for callpoint target path /snmp:snmp/target{monitor}
+<DEBUG> 9-May-2018::17:24:32.755 nso ncs[37]: devel-c set_case request for callpoint target path /snmp:snmp/target{monitor}
+<DEBUG> 9-May-2018::17:24:32.769 nso ncs[37]: devel-c set_case succeeded for callpoint target path /snmp:snmp/target{monitor}
+<DEBUG> 9-May-2018::17:24:32.770 nso ncs[37]: devel-c set_elem request for callpoint target path /snmp:snmp/target{monitor}/ip
+<DEBUG> 9-May-2018::17:24:32.773 nso ncs[37]: devel-c set_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/ip
+<DEBUG> 9-May-2018::17:24:32.773 nso ncs[37]: devel-c set_elem request for callpoint target path /snmp:snmp/target{monitor}/udp-port
+<DEBUG> 9-May-2018::17:24:32.774 nso ncs[37]: devel-c set_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/udp-port
+<DEBUG> 9-May-2018::17:24:32.775 nso ncs[37]: devel-c get_elem request for callpoint target path /snmp:snmp/target{monitor}/tag
+<DEBUG> 9-May-2018::17:24:32.776 nso ncs[37]: devel-c get_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/tag
+<DEBUG> 9-May-2018::17:24:32.776 nso ncs[37]: devel-c set_elem request for callpoint target path /snmp:snmp/target{monitor}/timeout
+<DEBUG> 9-May-2018::17:24:32.777 nso ncs[37]: devel-c set_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/timeout
+<DEBUG> 9-May-2018::17:24:32.778 nso ncs[37]: devel-c set_elem request for callpoint target path /snmp:snmp/target{monitor}/retries
+<DEBUG> 9-May-2018::17:24:32.778 nso ncs[37]: devel-c set_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/retries
+<DEBUG> 9-May-2018::17:24:32.780 nso ncs[37]: devel-c set_elem request for callpoint target path /snmp:snmp/target{monitor}/v2c/sec-name
+<DEBUG> 9-May-2018::17:24:32.783 nso ncs[37]: devel-c set_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/v2c/sec-name
+<DEBUG> 9-May-2018::17:24:32.785 nso ncs[37]: devel-c create request for callpoint community path /snmp:snmp/community{public}
+<DEBUG> 9-May-2018::17:24:32.788 nso ncs[37]: devel-c create succeeded for callpoint community path /snmp:snmp/community{public}
+<DEBUG> 9-May-2018::17:24:32.789 nso ncs[37]: devel-c set_elem request for callpoint community path /snmp:snmp/community{public}/sec-name
+<DEBUG> 9-May-2018::17:24:32.791 nso ncs[37]: devel-c set_elem succeeded for callpoint community path /snmp:snmp/community{public}/sec-name
+<DEBUG> 9-May-2018::17:24:32.791 nso ncs[37]: devel-c create request for callpoint notify path /snmp:snmp/notify{foo}
+<DEBUG> 9-May-2018::17:24:32.793 nso ncs[37]: devel-c create succeeded for callpoint notify path /snmp:snmp/notify{foo}
+<DEBUG> 9-May-2018::17:24:32.795 nso ncs[37]: devel-c set_elem request for callpoint notify path /snmp:snmp/notify{foo}/tag
+<DEBUG> 9-May-2018::17:24:32.799 nso ncs[37]: devel-c set_elem succeeded for callpoint notify path /snmp:snmp/notify{foo}/tag
+<DEBUG> 9-May-2018::17:24:32.800 nso ncs[37]: devel-c set_elem request for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:32.801 nso ncs[37]: devel-c set_elem succeeded for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:32.802 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}
+<DEBUG> 9-May-2018::17:24:32.804 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}
+<DEBUG> 9-May-2018::17:24:32.805 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/member{initial}
+<DEBUG> 9-May-2018::17:24:32.819 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/member{initial}
+<DEBUG> 9-May-2018::17:24:32.825 nso ncs[37]: devel-c get_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/member{initial}/sec-model
+<DEBUG> 9-May-2018::17:24:32.826 nso ncs[37]: devel-c get_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/member{initial}/sec-model
+<DEBUG> 9-May-2018::17:24:32.827 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}
+<DEBUG> 9-May-2018::17:24:32.830 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}
+<DEBUG> 9-May-2018::17:24:32.832 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.833 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.834 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.840 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm no-auth-no-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.841 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}
+<DEBUG> 9-May-2018::17:24:32.848 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}
+<DEBUG> 9-May-2018::17:24:32.849 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.859 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.860 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.863 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-no-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.865 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-priv}
+<DEBUG> 9-May-2018::17:24:32.866 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-priv}
+<DEBUG> 9-May-2018::17:24:32.867 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.868 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.869 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.870 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/access{usm auth-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.870 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{public}
+<DEBUG> 9-May-2018::17:24:32.872 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}
+<DEBUG> 9-May-2018::17:24:32.875 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{public}/member{public}
+<DEBUG> 9-May-2018::17:24:32.877 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}/member{public}
+<DEBUG> 9-May-2018::17:24:32.878 nso ncs[37]: devel-c get_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{public}/member{public}/sec-model
+<DEBUG> 9-May-2018::17:24:32.879 nso ncs[37]: devel-c get_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}/member{public}/sec-model
+<DEBUG> 9-May-2018::17:24:32.880 nso ncs[37]: devel-c create request for callpoint vacm_group path /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}
+<DEBUG> 9-May-2018::17:24:32.883 nso ncs[37]: devel-c create succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}
+<DEBUG> 9-May-2018::17:24:32.884 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.889 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/read-view
+<DEBUG> 9-May-2018::17:24:32.890 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.892 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}/access{any no-auth-no-priv}/notify-view
+<DEBUG> 9-May-2018::17:24:32.894 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{internet}
+<DEBUG> 9-May-2018::17:24:32.894 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{internet}
+<DEBUG> 9-May-2018::17:24:32.895 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}
+<DEBUG> 9-May-2018::17:24:32.898 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}
+<DEBUG> 9-May-2018::17:24:32.899 nso ncs[37]: devel-c set_case request for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}
+<DEBUG> 9-May-2018::17:24:32.900 nso ncs[37]: devel-c set_case succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}
+<DEBUG> 9-May-2018::17:24:32.900 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}/included
+<DEBUG> 9-May-2018::17:24:32.901 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{internet}/subtree{1.3.6.1}/included
+<DEBUG> 9-May-2018::17:24:32.902 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}
+<DEBUG> 9-May-2018::17:24:32.902 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}
+<DEBUG> 9-May-2018::17:24:32.903 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}
+<DEBUG> 9-May-2018::17:24:32.905 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}
+<DEBUG> 9-May-2018::17:24:32.905 nso ncs[37]: devel-c set_case request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}
+<DEBUG> 9-May-2018::17:24:32.906 nso ncs[37]: devel-c set_case succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}
+<DEBUG> 9-May-2018::17:24:32.912 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}/included
+<DEBUG> 9-May-2018::17:24:32.913 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.11.2.1}/included
+<DEBUG> 9-May-2018::17:24:32.915 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}
+<DEBUG> 9-May-2018::17:24:32.918 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}
+<DEBUG> 9-May-2018::17:24:32.920 nso ncs[37]: devel-c set_case request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}
+<DEBUG> 9-May-2018::17:24:32.925 nso ncs[37]: devel-c set_case succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}
+<DEBUG> 9-May-2018::17:24:32.926 nso ncs[37]: devel-c create request for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}/included
+<DEBUG> 9-May-2018::17:24:32.927 nso ncs[37]: devel-c create succeeded for callpoint vacm_view path /snmp:snmp/vacm/view{restricted}/subtree{1.3.6.1.6.3.15.1.1}/included
+<DEBUG> 9-May-2018::17:24:32.929 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:  ok
+<DEBUG> 9-May-2018::17:24:32.930 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{public}/member{public}/sec-model
+<DEBUG> 9-May-2018::17:24:32.940 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{public}/member{public}/sec-model
+<DEBUG> 9-May-2018::17:24:32.943 nso ncs[37]: devel-c set_elem request for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/member{initial}/sec-model
+<DEBUG> 9-May-2018::17:24:32.946 nso ncs[37]: devel-c set_elem succeeded for callpoint vacm_group path /snmp:snmp/vacm/group{initial}/member{initial}/sec-model
+<DEBUG> 9-May-2018::17:24:32.946 nso ncs[37]: devel-c set_elem request for callpoint target path /snmp:snmp/target{monitor}/tag
+<DEBUG> 9-May-2018::17:24:32.948 nso ncs[37]: devel-c set_elem succeeded for callpoint target path /snmp:snmp/target{monitor}/tag
+<DEBUG> 9-May-2018::17:24:32.949 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: mark inactive...
+<DEBUG> 9-May-2018::17:24:32.950 nso ncs[37]: devel-c get_elem request for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.957 nso ncs[37]: devel-c get_elem succeeded for callpoint agent path /snmp:snmp/agent/enabled
+<DEBUG> 9-May-2018::17:24:32.958 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:  ok
+<DEBUG> 9-May-2018::17:24:32.959 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: pre validate...
+<DEBUG> 9-May-2018::17:24:32.960 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:  ok
+<DEBUG> 9-May-2018::17:24:32.961 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: run validation over the change set...
+<DEBUG> 9-May-2018::17:24:32.963 nso ncs[37]: devel-c new_validate request daemon id: 1 thandle: 15
+<DEBUG> 9-May-2018::17:24:32.963 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   snmp-config-transform: validate
+<DEBUG> 9-May-2018::17:24:32.979 nso ncs[37]: devel-c new_validate succeeded daemon id: 1 session id: 15 worker id: 4
+<DEBUG> 9-May-2018::17:24:32.979 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   snmp-config-transform: validate: vacm-group
+<DEBUG> 9-May-2018::17:24:32.980 nso ncs[37]: devel-c validate request for path /snmp:snmp/vacm/group
+<DEBUG> 9-May-2018::17:24:32.980 nso ncs[37]: devel-c validate succeeded for path /snmp:snmp/vacm/group
+<DEBUG> 9-May-2018::17:24:33.043 nso ncs[37]: devel-c get_next request for callpoint community path /snmp:snmp/community
+<DEBUG> 9-May-2018::17:24:33.049 nso ncs[37]: devel-c get_next succeeded for callpoint community path /snmp:snmp/community
+<DEBUG> 9-May-2018::17:24:33.057 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: validation over the change set done
+<DEBUG> 9-May-2018::17:24:33.058 nso ncs[37]: devel-c get_next request for callpoint target path /snmp:snmp/target
+<DEBUG> 9-May-2018::17:24:33.058 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: run dependency-triggered validation...
+<DEBUG> 9-May-2018::17:24:33.059 nso ncs[37]: devel-c get_next succeeded for callpoint target path /snmp:snmp/target
+<DEBUG> 9-May-2018::17:24:33.060 nso ncs[37]: devel-c get_next request for callpoint target path /snmp:snmp/target
+<DEBUG> 9-May-2018::17:24:33.061 nso ncs[37]: devel-c get_next succeeded for callpoint target path /snmp:snmp/target
+<DEBUG> 9-May-2018::17:24:33.063 nso ncs[37]: devel-c get_next request for callpoint community path /snmp:snmp/community
+<DEBUG> 9-May-2018::17:24:33.065 nso ncs[37]: devel-c get_next succeeded for callpoint community path /snmp:snmp/community
+<DEBUG> 9-May-2018::17:24:33.066 nso ncs[37]: devel-c get_next request for callpoint community path /snmp:snmp/community
+<DEBUG> 9-May-2018::17:24:33.067 nso ncs[37]: devel-c get_next succeeded for callpoint community path /snmp:snmp/community
+<DEBUG> 9-May-2018::17:24:33.068 nso ncs[37]: devel-c get_next request for callpoint notify path /snmp:snmp/notify
+<DEBUG> 9-May-2018::17:24:33.068 nso ncs[37]: devel-c get_next succeeded for callpoint notify path /snmp:snmp/notify
+<DEBUG> 9-May-2018::17:24:33.069 nso ncs[37]: devel-c get_elem request for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:33.070 nso ncs[37]: devel-c get_elem succeeded for callpoint notify path /snmp:snmp/notify{foo}/type
+<DEBUG> 9-May-2018::17:24:33.071 nso ncs[37]: devel-c get_next request for callpoint notify path /snmp:snmp/notify
+<DEBUG> 9-May-2018::17:24:33.072 nso ncs[37]: devel-c get_next succeeded for callpoint notify path /snmp:snmp/notify
+<DEBUG> 9-May-2018::17:24:33.073 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: dependency-triggered validation done
+<DEBUG> 9-May-2018::17:24:33.078 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: check configuration policies...
+<DEBUG> 9-May-2018::17:24:33.082 nso ncs[37]: devel-c prepare request daemon id: 0 session id: 15
+<DEBUG> 9-May-2018::17:24:33.082 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   validate: configuration policies done
+<DEBUG> 9-May-2018::17:24:33.085 nso ncs[37]: devel-c prepare succeeded daemon id: 0 session id: 15
+<DEBUG> 9-May-2018::17:24:33.086 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15: entering write phase for running...
+<DEBUG> 9-May-2018::17:24:33.086 nso ncs[37]: devel-c close_validate request daemon id: 1 session id: 15
+<DEBUG> 9-May-2018::17:24:33.086 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   cdb: write_start
+<DEBUG> 9-May-2018::17:24:33.087 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15: entering prepare phase for running...
+<DEBUG> 9-May-2018::17:24:33.087 nso ncs[37]: devel-c close_validate succeeded daemon id: 1 session id: 15
+<DEBUG> 9-May-2018::17:24:33.087 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   cdb: prepare
+<DEBUG> 9-May-2018::17:24:33.088 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   ncs-internal-device-mgr: prepare
+<DEBUG> 9-May-2018::17:24:33.088 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15: entering commit phase for running...
+<DEBUG> 9-May-2018::17:24:33.088 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   cdb: commit
+<DEBUG> 9-May-2018::17:24:33.288 nso ncs[37]: devel-cdb Delaying CDB journal compaction
+<DEBUG> 9-May-2018::17:24:33.717 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   ncs-internal-service-mux: commit
+<DEBUG> 9-May-2018::17:24:33.719 nso ncs[37]: devel-c commit request daemon id: 4 session id: 15
+<DEBUG> 9-May-2018::17:24:33.721 nso ncs[37]: ncs commit progress db=running usid=39 thandle=15:   ncs-internal-device-mgr: commit
+<DEBUG> 9-May-2018::17:24:33.722 nso ncs[37]: devel-c commit succeeded daemon id: 4 session id: 15
+<DEBUG> 9-May-2018::17:24:33.723 nso ncs[37]: devel-c commit request daemon id: 0 session id: 15
+<DEBUG> 9-May-2018::17:24:33.724 nso ncs[37]: devel-c commit succeeded daemon id: 0 session id: 15
+<DEBUG> 9-May-2018::17:24:33.754 nso ncs[37]: devel-c close_trans request daemon id: 4 session id: 15
+<DEBUG> 9-May-2018::17:24:33.756 nso ncs[37]: devel-c close_trans succeeded daemon id: 4 session id: 15
+<DEBUG> 9-May-2018::17:24:33.758 nso ncs[37]: devel-c close_trans request daemon id: 0 session id: 15
+<DEBUG> 9-May-2018::17:24:33.759 nso ncs[37]: devel-c close_trans succeeded daemon id: 0 session id: 15
+<DEBUG> 9-May-2018::17:24:33.759 nso ncs[37]: devel-c close_trans request daemon id: 2 session id: 15
+<DEBUG> 9-May-2018::17:24:33.760 nso ncs[37]: devel-c close_trans succeeded daemon id: 2 session id: 15
+<DEBUG> 9-May-2018::17:24:33.761 nso ncs[37]: devel-c close_trans request daemon id: 1 session id: 15
+<DEBUG> 9-May-2018::17:24:33.762 nso ncs[37]: devel-c close_trans succeeded daemon id: 1 session id: 15
+<DEBUG> 9-May-2018::17:24:33.762 nso ncs[37]: devel-c close_usess db request daemon id: 4
+<DEBUG> 9-May-2018::17:24:33.763 nso ncs[37]: devel-c db reply daemon id: 4
+<DEBUG> 9-May-2018::17:24:33.764 nso ncs[37]: devel-c close_usess db request daemon id: 2
+<DEBUG> 9-May-2018::17:24:33.764 nso ncs[37]: devel-c db reply daemon id: 2
+<DEBUG> 9-May-2018::17:24:33.765 nso ncs[37]: devel-c close_usess db request daemon id: 1
+<DEBUG> 9-May-2018::17:24:33.766 nso ncs[37]: devel-c db reply daemon id: 1
+<DEBUG> 9-May-2018::17:24:33.766 nso ncs[37]: devel-c close_usess db request daemon id: 0
+<DEBUG> 9-May-2018::17:24:33.767 nso ncs[37]: devel-c db reply daemon id: 0
+<DEBUG> 9-May-2018::17:24:33.816 nso ncs[37]: devel-cdb connect from econfd <0.168.0>
+<DEBUG> 9-May-2018::17:24:33.817 nso ncs[37]: devel-cdb new session on running for econfd <0.168.0>
+<DEBUG> 9-May-2018::17:24:33.820 nso ncs[37]: devel-cdb client econfd <0.168.0> closed
+<DEBUG> 9-May-2018::17:24:33.821 nso ncs[37]: devel-cdb connect from econfd <0.168.0>
+<DEBUG> 9-May-2018::17:24:33.821 nso ncs[37]: devel-cdb new session on operational for econfd <0.168.0>
+<DEBUG> 9-May-2018::17:24:33.821 nso ncs[37]: devel-cdb client econfd <0.168.0> closed
+<DEBUG> 9-May-2018::17:24:33.822 nso ncs[37]: devel-cdb connect from econfd <0.401.0>
+<DEBUG> 9-May-2018::17:24:33.822 nso ncs[37]: devel-cdb new subscriber session for econfd <0.401.0>
+<INFO> 9-May-2018::17:24:33.826 nso ncs[37]: ncs embedded apps in phase2:
+	[]
+<INFO> 9-May-2018::17:24:34.920 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMPv2-MIB
+<INFO> 9-May-2018::17:24:34.921 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-FRAMEWORK-MIB
+<INFO> 9-May-2018::17:24:34.922 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-MPD-MIB
+<INFO> 9-May-2018::17:24:35.079 nso ncs[37]: devel-snmpa setting snmpEngineID: 80:00:7E:D9:04:74:65:73:74:69:6E:67
+<DEBUG> 9-May-2018::17:24:35.121 nso ncs[37]: devel-snmpa no view for view type: write
+<DEBUG> 9-May-2018::17:24:35.121 nso ncs[37]: devel-snmpa no access entry and view name found: view type: write, group name: public, context name: , sec model: SNMPv1(1), sec level: noAuthNoPriv(1)
+<DEBUG> 9-May-2018::17:24:35.122 nso ncs[37]: devel-snmpa no view for view type: write
+<DEBUG> 9-May-2018::17:24:35.122 nso ncs[37]: devel-snmpa no access entry and view name found: view type: write, group name: public, context name: , sec model: SNMPv2c(2), sec level: noAuthNoPriv(1)
+<INFO> 9-May-2018::17:24:35.164 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/etc/ncs/snmp/IANA-ITU-ALARM-TC-MIB.bin
+<INFO> 9-May-2018::17:24:35.166 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/etc/ncs/snmp/ITU-ALARM-TC-MIB.bin
+<INFO> 9-May-2018::17:24:35.176 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/etc/ncs/snmp/TAILF-ALARM-MIB.bin
+<INFO> 9-May-2018::17:24:35.178 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/etc/ncs/snmp/TAILF-ALARM-TC-MIB.bin
+<INFO> 9-May-2018::17:24:35.180 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/etc/ncs/snmp/TAILF-TOP-MIB.bin
+<INFO> 9-May-2018::17:24:35.188 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-COMMUNITY-MIB.bin
+<INFO> 9-May-2018::17:24:35.190 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-TARGET-MIB.bin
+<INFO> 9-May-2018::17:24:35.193 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-NOTIFICATION-MIB.bin
+<INFO> 9-May-2018::17:24:35.196 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-USER-BASED-SM-MIB.bin
+<INFO> 9-May-2018::17:24:35.198 nso ncs[37]: devel-snmpa loaded snmp mib: /home/cisco/ncs452/lib/ncs/lib/snmp/snmp/priv/mibs/SNMP-VIEW-BASED-ACM-MIB.bin
+<INFO> 9-May-2018::17:24:35.199 nso ncs[37]: devel-snmpa snmp agent started
+<DEBUG> 9-May-2018::17:24:38.290 nso ncs[37]: devel-cdb Delaying CDB journal compaction
+<INFO> 9-May-2018::17:24:43.290 nso ncs[37]: devel-cdb Initiating CDB journal compaction
+<INFO> 9-May-2018::17:24:43.335 nso ncs[37]: devel-cdb Compacted CDB journal file: 44 ms (376 nodes in memory, disk size 6.02 KiB -> 5.76 KiB)
+<DEBUG> 9-May-2018::17:25:30.097 nso ncs[37]: devel-cdb connect from econfd <0.497.0>
+<DEBUG> 9-May-2018::17:25:30.098 nso ncs[37]: devel-cdb new subscriber session for econfd <0.497.0>
+<DEBUG> 9-May-2018::17:25:30.161 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23: entering validate phase for running...
+<DEBUG> 9-May-2018::17:25:30.161 nso ncs[37]: devel-c new_usess db request daemon id: 4
+<DEBUG> 9-May-2018::17:25:30.162 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: run pre-trans-lock service callbacks...
+<DEBUG> 9-May-2018::17:25:30.162 nso ncs[37]: devel-c db reply daemon id: 4
+<DEBUG> 9-May-2018::17:25:30.163 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: run transforms and transaction hooks...
+<DEBUG> 9-May-2018::17:25:30.163 nso ncs[37]: devel-c new_trans request daemon id: 4 thandle: 23
+<DEBUG> 9-May-2018::17:25:30.164 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:  ok
+<DEBUG> 9-May-2018::17:25:30.164 nso ncs[37]: devel-c new_trans succeeded daemon id: 4 session id: 23 worker id: 1
+<DEBUG> 9-May-2018::17:25:30.165 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: pre-trans-lock service callbacks done
+<DEBUG> 9-May-2018::17:25:30.165 nso ncs[37]: devel-c new_usess db request daemon id: 0
+<DEBUG> 9-May-2018::17:25:30.165 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: grabbing transaction lock...
+<DEBUG> 9-May-2018::17:25:30.166 nso ncs[37]: devel-c db reply daemon id: 0
+<DEBUG> 9-May-2018::17:25:30.166 nso ncs[37]: devel-c new_trans request daemon id: 0 thandle: 23
+<DEBUG> 9-May-2018::17:25:30.167 nso ncs[37]: devel-c new_trans succeeded daemon id: 0 session id: 23 worker id: 1
+<DEBUG> 9-May-2018::17:25:30.167 nso ncs[37]: devel-c trans_lock request daemon id: 4 session id: 23
+<DEBUG> 9-May-2018::17:25:30.168 nso ncs[37]: devel-c trans_lock succeeded daemon id: 4 session id: 23
+<DEBUG> 9-May-2018::17:25:30.168 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:  ok
+<DEBUG> 9-May-2018::17:25:30.169 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: creating rollback file...
+<DEBUG> 9-May-2018::17:25:30.240 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:  ok
+<DEBUG> 9-May-2018::17:25:30.248 nso ncs[37]: ncs kicker: internal at /kicker:kickers changed, invoking {kicker_server,
+                                                       kicker_data_changed,[]}
+<DEBUG> 9-May-2018::17:25:30.249 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: run transforms and transaction hooks...
+<DEBUG> 9-May-2018::17:25:30.251 nso ncs[37]: devel-c prepare request daemon id: 0 session id: 23
+<DEBUG> 9-May-2018::17:25:30.251 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:  ok
+<DEBUG> 9-May-2018::17:25:30.251 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: mark inactive...
+<DEBUG> 9-May-2018::17:25:30.252 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:  ok
+<DEBUG> 9-May-2018::17:25:30.252 nso ncs[37]: devel-c prepare succeeded daemon id: 0 session id: 23
+<DEBUG> 9-May-2018::17:25:30.256 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: pre validate...
+<DEBUG> 9-May-2018::17:25:30.257 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:  ok
+<DEBUG> 9-May-2018::17:25:30.257 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: run validation over the change set...
+<DEBUG> 9-May-2018::17:25:30.259 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: validation over the change set done
+<DEBUG> 9-May-2018::17:25:30.259 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: run dependency-triggered validation...
+<DEBUG> 9-May-2018::17:25:30.260 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: dependency-triggered validation done
+<DEBUG> 9-May-2018::17:25:30.261 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: check configuration policies...
+<DEBUG> 9-May-2018::17:25:30.261 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   validate: configuration policies done
+<DEBUG> 9-May-2018::17:25:30.262 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23: entering write phase for running...
+<DEBUG> 9-May-2018::17:25:30.266 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   cdb: write_start
+<DEBUG> 9-May-2018::17:25:30.269 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23: entering prepare phase for running...
+<DEBUG> 9-May-2018::17:25:30.270 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   cdb: prepare
+<DEBUG> 9-May-2018::17:25:30.270 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   ncs-internal-device-mgr: prepare
+<DEBUG> 9-May-2018::17:25:30.271 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23: entering commit phase for running...
+<DEBUG> 9-May-2018::17:25:30.272 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   cdb: commit
+<DEBUG> 9-May-2018::17:25:30.286 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   ncs-internal-service-mux: commit
+<DEBUG> 9-May-2018::17:25:30.287 nso ncs[37]: devel-c commit request daemon id: 4 session id: 23
+<DEBUG> 9-May-2018::17:25:30.293 nso ncs[37]: ncs commit progress db=running usid=6 thandle=23:   ncs-internal-device-mgr: commit
+<DEBUG> 9-May-2018::17:25:30.296 nso ncs[37]: devel-c commit succeeded daemon id: 4 session id: 23
+<DEBUG> 9-May-2018::17:25:30.298 nso ncs[37]: devel-c commit request daemon id: 0 session id: 23
+<DEBUG> 9-May-2018::17:25:30.304 nso ncs[37]: devel-c commit succeeded daemon id: 0 session id: 23
+<DEBUG> 9-May-2018::17:25:30.343 nso ncs[37]: devel-c close_trans request daemon id: 4 session id: 23
+<DEBUG> 9-May-2018::17:25:30.347 nso ncs[37]: devel-c close_trans succeeded daemon id: 4 session id: 23
+<DEBUG> 9-May-2018::17:25:30.350 nso ncs[37]: devel-c close_trans request daemon id: 0 session id: 23
+<DEBUG> 9-May-2018::17:25:30.352 nso ncs[37]: devel-c close_trans succeeded daemon id: 0 session id: 23
+<DEBUG> 9-May-2018::17:25:30.511 nso ncs[37]: devel-sls starting SLS server
+<DEBUG> 9-May-2018::17:26:09.301 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessj3Vv1GJq+JfFiGM7noxDqA==: {"jsonrpc":"2.0","id":1,"method":"login","params":{"user":"cisco","...
+
+<DEBUG> 9-May-2018::17:26:10.565 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessj3Vv1GJq+JfFiGM7noxDqA==: {"jsonrpc":"2.0","id":2,"method":"login","params":{"user":"cisco","...
+
+<DEBUG> 9-May-2018::17:26:11.343 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessionid_8080=sessZlcU579K2dw2av5MeoKSZg==; path=/; HttpOnly: ?
+RESPONSE sessionid_8080=sessZlcU579K2dw2av5MeoKSZg==; path=/; HttpOnly: {"jsonrpc":"2.0","result":{},"id":1}
+
+<DEBUG> 9-May-2018::17:26:12.494 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":1,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:26:12.597 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":2,"method":"get_trans"}
+
+<DEBUG> 9-May-2018::17:26:12.651 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessionid_8080=sess7ldITUN0NnuK1HIUT0G8og==; path=/; HttpOnly: ?
+RESPONSE sessionid_8080=sess7ldITUN0NnuK1HIUT0G8og==; path=/; HttpOnly: {"jsonrpc":"2.0","result":{},"id":2}
+
+<DEBUG> 9-May-2018::17:26:12.662 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":3,"method":"get_system_setting","params":{"operation":"all"}}
+
+<DEBUG> 9-May-2018::17:26:12.792 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":2,"method":"get_trans"}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"trans":[]},"id":2}
+
+<DEBUG> 9-May-2018::17:26:12.884 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":3,"method":"get_system_setting","params":{"operation":"all"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"capabilities":{"rollback":true},"customizations":["ncs"],"models":[{"prefix":"encryption-usm","namespace":"http://tailf.com/ns/encryption-usm","name":"encryption-usm"},{"prefix":"ianach","namespace":"urn:ietf:params:xml:ns:yang:iana-crypt-hash","name":"iana-crypt-hash"},{"prefix":"inet","namespace":"urn:ietf:params:xml:ns:yang:ietf-inet-types","name":"ietf-inet-types"},{"prefix":"nacm","namespace":"urn:ietf:params:xml:ns:yang:ietf-netconf-acm","name":"ietf-netconf-acm"},{"prefix":"ncm","namespace":"urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring","name":"ietf-netconf-monitoring"},{"prefix":"rcmon","namespace":"urn:ietf:params:xml:ns:yang:ietf-restconf-monitoring","name":"ietf-restconf-monitoring"},{"prefix":"smiv2","namespace":"urn:ietf:params:xml:ns:yang:ietf-yang-smiv2","name":"ietf-yang-smiv2"},{"prefix":"yang","namespace":"urn:ietf:params:xml:ns:yang:ietf-yang-types","name":"ietf-yang-types"},{"prefix":"ncs-snmp","namespace":"http://tail-f.com/ns/ncs-snmp","name":"tailf-nc...
+
+<DEBUG> 9-May-2018::17:26:13.072 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":4,"method":"new_trans","params":{"db":"running","mode":"read","conf_mode":"private"}}
+
+<DEBUG> 9-May-2018::17:26:13.100 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":4,"method":"new_trans","params":{"db":"running","mode":"read","conf_mode":"private"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"th":1},"id":4}
+
+<DEBUG> 9-May-2018::17:26:13.147 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":5,"method":"query","params":{"th":1,"path":"/webui:webui/webui-one:applications/application","selection":["id","category","href","title","description","promo-label","abbreviation","shortcut"]}}
+
+<DEBUG> 9-May-2018::17:26:13.238 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":6,"method":"query","params":{"th":1,"path":"/ncs:packages/package","selection":["name","description"]}}
+
+<DEBUG> 9-May-2018::17:26:13.292 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":6,"method":"query","params":{"th":1,"path":"/ncs:packages/package","selection":["name","description"]}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"current_position":1,"total_number_of_results":0,"number_of_results":0,"number_of_elements_per_result":2,"results":[]},"id":6}
+
+<DEBUG> 9-May-2018::17:26:13.296 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":5,"method":"query","params":{"th":1,"path":"/webui:webui/webui-one:applications/application","selection":["id","category","href","title","description","promo-label","abbreviation","shortcut"]}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"current_position":1,"total_number_of_results":5,"number_of_results":5,"number_of_elements_per_result":8,"results":[["Commit manager","Configuration","/CommitManager","Commit manager","See the status of your current transaction and commit your changes.","NEW","C","gc"],["Device manager","Configuration","/DeviceManager","Device manager","Find, synchronize and group your devices. Monitor connectivity status and access the configuration data.","NEW","D","gd"],["Model browser","Configuration","/ModelBrowser","Model browser","Access the data models that are loaded in NSO.","NEW","M","gm"],["Service manager","Configuration","/ServiceManager","Service manager","Find and synchronize your services. See deployment status and access the service configuration data.","NEW","S","gs"],["Webui Prime","Legacy","../prime","Webui Prime","Use the previous UI instead of the new one.","","",""]]},"id":5}
+
+<DEBUG> 9-May-2018::17:26:14.642 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":7,"method":"subscribe_changes","params":{"path":"/ncs:devices/device","comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:26:14.671 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":8,"method":"query","params":{"th":1,"path":"/ncs:devices/device-group","selection":["name"]}}
+
+<DEBUG> 9-May-2018::17:26:14.678 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":9,"method":"get_schema","params":{"levels":1,"path":"/ncs:devices/device-group","th":1,"evaluate_when_entries":true}}
+
+<DEBUG> 9-May-2018::17:26:14.678 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":10,"method":"get_schema","params":{"levels":1,"path":"/ncs:devices/device","th":1,"evaluate_when_entries":true}}
+
+<DEBUG> 9-May-2018::17:26:14.777 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":7,"method":"subscribe_changes","params":{"path":"/ncs:devices/device","comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"handle":"1"},"id":7}
+
+<DEBUG> 9-May-2018::17:26:14.925 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":8,"method":"query","params":{"th":1,"path":"/ncs:devices/device-group","selection":["name"]}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"current_position":1,"total_number_of_results":0,"number_of_results":0,"number_of_elements_per_result":1,"results":[]},"id":8}
+
+<DEBUG> 9-May-2018::17:26:14.930 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":11,"method":"start_subscription","params":{"handle":"1"}}
+
+<DEBUG> 9-May-2018::17:26:14.948 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":11,"method":"start_subscription","params":{"handle":"1"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{},"id":11}
+
+<DEBUG> 9-May-2018::17:26:15.006 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":9,"method":"get_schema","params":{"levels":1,"path":"/ncs:devices/device-group","th":1,"evaluate_when_entries":true}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"meta":{"namespace":"http://tail-f.com/ns/ncs","keypath":"/ncs:devices/device-group","prefix":"ncs","types":{"http://tail-f.com/ns/ncs:t61":[{"leaf_type":[{"name":"string"}],"list_type":[{"name":"http://tail-f.com/ns/ncs:t61","leaf-list":true}]}],"http://tail-f.com/ns/ncs:t59":[{"leaf_type":[{"name":"string"}],"list_type":[{"name":"http://tail-f.com/ns/ncs:t59","leaf-list":true}]}],"http://tail-f.com/ns/ncs:t57":[{"leaf_type":[{"name":"string"}],"list_type":[{"name":"http://tail-f.com/ns/ncs:t57","leaf-list":true}]}]}},"data":{"kind":"list","name":"device-group","qname":"ncs:device-group","info":{"string":"Groups of devices"},"mandatory":true,"min_elements":0,"max_elements":"unbounded","key":["name"],"access":{"create":true,"read":true,"update":true,"delete":true,"execute":false},"leafrefGroups":[["device-name"],["device-group"],["member"]],"leafref_groups":[["device-name"],["device-group"],["member"]],"children":[{"kind":"key","name":"name","qname":"ncs:name","mandatory":true,"acc...
+
+<DEBUG> 9-May-2018::17:26:15.017 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":10,"method":"get_schema","params":{"levels":1,"path":"/ncs:devices/device","th":1,"evaluate_when_entries":true}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"meta":{"namespace":"http://tail-f.com/ns/ncs","keypath":"/ncs:devices/device","prefix":"ncs","types":{"http://tail-f.com/ns/ncs:t102":[{"leaf_type":[{"name":"string"}],"list_type":[{"name":"http://tail-f.com/ns/ncs:t102","leaf-list":true}]}],"http://tail-f.com/ns/ncs:t41":[{"name":"http://tail-f.com/ns/ncs:t41","enumeration":[{"label":"reject"},{"label":"accept"}]},{"name":"string"}],"http://tail-f.com/ns/ncs:trace-flag":[{"name":"http://tail-f.com/ns/ncs:trace-flag","enumeration":[{"label":"false","info":"Trace is disabled"},{"label":"raw","info":"Raw, unformatted data"},{"label":"pretty","info":"Pretty-printed data"}]},{"name":"string"}],"http://tail-f.com/ns/ncs:t29":[{"name":"http://tail-f.com/ns/ncs:t29","range":{"value":[["1","4294967"]]}},{"name":"uint32"}],"http://tail-f.com/ns/ncs:t28":[{"name":"http://tail-f.com/ns/ncs:t28","range":{"value":[["1","4294967"]]}},{"name":"uint32"}],"http://tail-f.com/ns/ncs:t27":[{"name":"http://tail-f.com/ns/ncs:t27","range":{"value":[["1"...
+
+<DEBUG> 9-May-2018::17:26:15.127 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":12,"method":"query","params":{"th":1,"path":"/ncs:devices/device","selection":["name","address","port"]}}
+
+<DEBUG> 9-May-2018::17:26:15.144 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":12,"method":"query","params":{"th":1,"path":"/ncs:devices/device","selection":["name","address","port"]}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"current_position":1,"total_number_of_results":0,"number_of_results":0,"number_of_elements_per_result":3,"results":[]},"id":12}
+
+<DEBUG> 9-May-2018::17:26:15.274 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":13,"method":"get_values","params":{"th":1,"path":"/ncs:devices","leafs":[]}}
+
+<DEBUG> 9-May-2018::17:26:15.295 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":13,"method":"get_values","params":{"th":1,"path":"/ncs:devices","leafs":[]}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"values":[]},"id":13}
+
+<DEBUG> 9-May-2018::17:26:15.396 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":14,"method":"get_trans"}
+
+<DEBUG> 9-May-2018::17:26:15.401 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":14,"method":"get_trans"}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":{"trans":[{"th":1,"db":"running","mode":"read"}]},"id":14}
+
+<DEBUG> 9-May-2018::17:26:27.706 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":1,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":[],"id":1}
+
+<DEBUG> 9-May-2018::17:26:27.729 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":15,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:26:42.731 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":15,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":[],"id":15}
+
+<DEBUG> 9-May-2018::17:26:42.745 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":16,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:26:57.747 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":16,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":[],"id":16}
+
+<DEBUG> 9-May-2018::17:26:57.757 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":17,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:27:12.760 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":17,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":[],"id":17}
+
+<DEBUG> 9-May-2018::17:27:12.780 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":18,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:27:27.783 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":18,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":[],"id":18}
+
+<DEBUG> 9-May-2018::17:27:27.792 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":19,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:27:42.795 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":19,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":[],"id":19}
+
+<DEBUG> 9-May-2018::17:27:42.807 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":20,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+
+<DEBUG> 9-May-2018::17:27:57.809 nso ncs[37]: devel webui_appmod_jsonrpc 
+REQUEST sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":20,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+RESPONSE sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","result":[],"id":20}
+
+<DEBUG> 9-May-2018::17:27:57.820 nso ncs[37]: devel webui_appmod_jsonrpc 
+INCOMING sessZlcU579K2dw2av5MeoKSZg==: {"jsonrpc":"2.0","id":21,"method":"comet","params":{"comet_id":"main-comet-1525886772376"}}
+

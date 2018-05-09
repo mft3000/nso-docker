@@ -1,0 +1,8 @@
+<INFO> 9-May-2018::17:26:09.357 nso ncs[37]: audit user: [withheld]/0 local authentication failed via webui from 172.17.0.1:35720 with http: no such local user
+<INFO> 9-May-2018::17:26:10.566 nso ncs[37]: audit user: [withheld]/0 local authentication failed via webui from 172.17.0.1:35726 with http: no such local user
+<INFO> 9-May-2018::17:26:10.656 nso ncs[37]: audit user: cisco/0 pam authentication succeeded via webui from 172.17.0.1:35720 with http
+<INFO> 9-May-2018::17:26:10.666 nso ncs[37]: audit user: cisco/0 logged in via webui from 172.17.0.1:35720 with http using pamhandle authentication
+<INFO> 9-May-2018::17:26:10.667 nso ncs[37]: audit user: cisco/48 assigned to groups: cisco,sudo
+<INFO> 9-May-2018::17:26:11.339 nso ncs[37]: audit user: cisco/0 pam authentication succeeded via webui from 172.17.0.1:35726 with http
+<INFO> 9-May-2018::17:26:11.340 nso ncs[37]: audit user: cisco/0 logged in via webui from 172.17.0.1:35726 with http using pamhandle authentication
+<INFO> 9-May-2018::17:26:11.341 nso ncs[37]: audit user: cisco/49 assigned to groups: cisco,sudo
