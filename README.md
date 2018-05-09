@@ -1,9 +1,9 @@
 # Cisco Network Service Orchestrator (NSO) Docker
 
-This repository will contains the data for build and run a docker container with cisco NSO.
+This repository will contains the data for build and run a docker container with cisco NSO.  
 
-put NSO Setup files inside: Data/ncs-setup
-put NSO NEDs files inside: Data/neds
+put NSO Setup files inside: Data/ncs-setup  
+put NSO NEDs files inside: Data/neds  
 
 + build image
 
@@ -71,5 +71,5 @@ make: Leaving directory '/home/cisco/workspaces/4.5.2/ncs-run/packages/l2vpn/src
 
 # Disclaimer
 
-This repository does not contain any material owned by cisco
+This repository does not contain any material owned by cisco  
 Downloading NSO images or NEDs needs a valid purchase order... please contact cisco System Egineer or Newtork Consultant Engineer
