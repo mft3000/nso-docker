@@ -20,6 +20,7 @@ su - cisco
 . ncs/ncsrc
 cd ncs-run
 ncs
+```
 
 + run image and run NCS (from local drive workspace repository in order to make data persistent) and stop
 
