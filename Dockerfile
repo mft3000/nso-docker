@@ -22,7 +22,7 @@ RUN apt-get install -y wget vim curl
 WORKDIR /home/cisco
 ADD Data /home/cisco
 
-RUN ln -s /home/cisco/workspaces/$NSOVER/ncs-run /home/cisco/ncs-run
+RUN ln -s /home/cisco/workspaces/4.5.2/ncs-run /home/cisco/ncs-run
 	
 RUN apt-get -y install openssh-client openssh-server vim python2.7 make gawk ant && \
 	apt-get -y clean autoclean && \
